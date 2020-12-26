@@ -1,7 +1,7 @@
 # Learning How to Learn - Week 1
 
 ## 2 Thinking Modes
-test
+test2
 
 1. Focused
 2. Diffused
