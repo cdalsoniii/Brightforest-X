@@ -1,62 +1,108 @@
-# Learning How to Learn - Week 4
+# 12/29/2020
 
-## Things that make us human
+## Goals
 
-- Learning
-- Language
-- Planning
-- Visual Cortex - matures in childhood
-- Prefrontal Cortex - matures in puberty
+- Originally the goal was to figure out how to load large dependencies on the aws lambda functions.
 
-## Quotes
+## Efforts
 
-- We can make significant changes in our brain by changing how we think.
-- **Taking responsibility of our own learning is one of the most important things we can do.**
-- Virtue of the less brilliant: perseverance
-- "The first principle is that you must not fool yourself- and you are the easiest person to fool." - Richart Feynman
+- Mounting EFS Volumne to AWS Lamda function to load dependencies at runtime
+- Use container image on to load files and required dependencies/models
+- Use S3 bucket to load dependencies at runtime
 
-## Right hemisphere
-
-- big picture thinking, context-dependent thinking style are significantly more characteristic to result in **right hemisphere dominance**
-- Acc to neuroscientist, Vilayanur S. Ramachandran - the right hemisphere serves as a devil's advocate to question the status quo and look for global inconsistencies, while the left hemisphere clings to the way things were
+## References
 
 
-## How to prepare for a test: Test Checklist (developed by Richard Felder)
+### Serverless BERT with HuggingFace and AWS Lambda
 
-1. Did you make a serious effort to understand the text?
-2. Did you work with classmates on homework problems?
-3. Did you attempt to outline every homework problem solution?
-4. Did you participate actively in homework group discussions?
-5. Did you consult with the instructor?
-6. Did you understand all of your homework problem solutions?
-7. Did you ask in class for explanations of homework problem solutions that weren't clear to you?
-8. A study guide?
-9. Did you attempt to outline lots of problem solutions quickly?
-10. Did you go over the study guide and problems with classsmates and quiz one another?
-11. A review session?
-12. Did you get a reasonable night's sleep before the test?
+https://towardsdatascience.com/serverless-bert-with-huggingface-and-aws-lambda-625193c6cc04
 
-## Notes
+### Setup —Serverless Machine Learning Inference with AWS Lambda + Amazon EFS
 
-- Consulting with your peers/ talking to them about what you're studying helps build your understanding and can help you in catching where your thinking has gone astray.
-- When you receive a test paper:
-    1. Skim the test paper
-    2. Work on the difficult problem
-        - if stuck for at least 1 minute, move on to easier problems
-    3. Answer easy problems
-    4. Get back to difficult problems
-- Cortisol is produced when you're under stress while taking an exam (sweaty palms, racing heart)
-    - It's how you view/interpret the stress that matters
-        - Stress -> "This test makes me afraid" -> You'll be afraid
-        - Stress -> "This test makes me excited"
-        -> You'll be more fired up to take on the exam
-- Practice deep breathing
-- Always recheck your work, even after you're "done" with it. Through **overconfidence**, it might be that you fool yourself that what you've done is correct even if it isn't. Pause. Shift your attention and ask yourself a question "Does this really make sense?"
+https://medium.com/faun/setup-serverless-ml-inference-with-aws-lambda-efs-738546fa2e03
 
-## Summary
+https://aws.amazon.com/blogs/compute/using-amazon-efs-for-aws-lambda-in-your-serverless-applications/
 
-- Santiago Ramón y Cajal (Noble prize winner, neuroscientist) - If you change your thoughts, you can really truly change your life.
+### Deploying Deep Learning Models as Serverless APIs
 
-## Diffused-Focused thinking analogy pic
+https://towardsdatascience.com/deploying-deep-learning-models-as-serverless-api-553eda925804
 
-![Diffused-Focused](./diffused-focused.png)
+## EFS Examples
+
+## How to integrate Amazon EFS with Lambda | Vimal Paliwal
+
+> https://www.youtube.com/watch?v=4PR-qBEZiWc&feature=emb_logo
+### Integrating Amazon EFS with Lambda
+
+> https://vimalpaliwal.medium.com/how-to-integrate-amazon-efs-with-lambda-f186c02893b4
+### Mount Your AWS EFS Volume Into AWS Lambda With the Serverless Framework
+
+> https://medium.com/faun/setup-serverless-ml-inference-with-aws-lambda-efs-738546fa2e03
+### An AWS Summer: EFS & Lambda + Serverless Framework
+
+> https://dev.to/aestevezjimenez/an-aws-summer-efs-lambda-serverless-framework-489
+
+### New Serverless Bert with Huggingface, AWS Lambda, and AWS EFS
+> https://towardsdatascience.com/new-serverless-bert-with-huggingface-aws-lambda-and-aws-efs-5d8954ce654
+
+### How to install library on EFS & import in lambda
+
+https://www.youtube.com/watch?v=FA153BGOV_A
+
+### Introduction to using EFS with AWS Lambda
+
+https://www.youtube.com/watch?v=vHwNh9JtPwE&t=49s
+
+
+### Serverless BERT with Huggingface and AWS Lambda, Quantum Computing with AWS Braket
+
+https://www.youtube.com/watch?v=Q10vhymrGh4
+
+### Serverless BERT with HuggingFace and AWS Lambda
+### Solution without Docker
+
+https://towardsdatascience.com/serverless-bert-with-huggingface-and-aws-lambda-625193c6cc04
+
+## New Serverless Bert with Huggingface, AWS Lambda, and AWS EFS
+
+https://www.philschmid.de/new-serverless-bert-with-huggingface-aws-lambda
+ # Docker
+
+ >> Solution
+ - https://towardsdatascience.com/serverless-bert-with-huggingface-aws-lambda-and-docker-4a0214c77a6f
+ - https://github.com/philschmid/serverless-bert-huggingface-aws-lambda-docker
+ - Example Endpoint:
+    - https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/serverless-bert-lambda-docker-dev-questionanswering?tab=testing
+    - https://k1cs64sx73.execute-api.us-east-1.amazonaws.com/dev/qa
+
+Location:
+  - /Users/clifforddalsoniii/Documents/Brightforest/projects/development/env/serverless/demos/serverless-bert-huggingface-aws-lambda-docker
+
+## Commands
+- docker push 461115474711.dkr.ecr.us-east-1.amazonaws.com/bert-lambda:latest
+- aws ecr create-repository --repository-name bert-lambda --region us-east-1 > /dev/null
+- docker tag bert-lambda:latest 461115474711.dkr.ecr.us-east-1.amazonaws.com/bert-lambda:latest
+-  aws ecr get-login-password     --region $aws_region | docker login     --username AWS     --password-stdin $aws_account_id.dkr.ecr.$aws_region.amazonaws.com
+- aws_account_id=461115474711
+- aws_region=us-east-1
+
+
+# General Examples
+
+> https://www.philschmid.de/scaling-machine-learning-from-zero-to-hero
+
+## Hacks
+
+### How Did I “Hack” AWS Lambda to Run Docker Containers
+
+https://hackernoon.com/how-did-i-hack-aws-lambda-to-run-docker-containers-7184dc47c09b
+
+
+## Contacts
+
+> Phil Schmid
+
+> https://github.com/philschmid
+## Misc
+
+https://wedevs.com/wp-user-frontend-pro/frontend-posting/
