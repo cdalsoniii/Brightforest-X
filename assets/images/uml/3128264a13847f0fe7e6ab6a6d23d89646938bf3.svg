@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="228px" preserveAspectRatio="none" style="width:184px;height:228px;" version="1.1" viewBox="0 0 184 228" width="184px" zoomAndPan="magnify"><defs><filter height="300%" id="f1dmugp6t4u6nm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[cbfc57bef1c415c3126d20e2f7e364c7]
+class Stage--><rect codeLine="2" fill="#FEFECE" filter="url(#f1dmugp6t4u6nm)" height="48" id="Stage" style="stroke: #A80036; stroke-width: 1.5;" width="63" x="57" y="7"/><ellipse cx="72" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M74.4731,29.1431 Q73.8921,29.4419 73.2529,29.5913 Q72.6138,29.7407 71.9082,29.7407 Q69.4014,29.7407 68.0815,28.0889 Q66.7617,26.437 66.7617,23.3159 Q66.7617,20.1865 68.0815,18.5347 Q69.4014,16.8828 71.9082,16.8828 Q72.6138,16.8828 73.2612,17.0322 Q73.9087,17.1816 74.4731,17.4805 L74.4731,20.2031 Q73.8423,19.6221 73.2488,19.3523 Q72.6553,19.0825 72.0244,19.0825 Q70.6797,19.0825 69.9949,20.1492 Q69.3101,21.2158 69.3101,23.3159 Q69.3101,25.4077 69.9949,26.4744 Q70.6797,27.541 72.0244,27.541 Q72.6553,27.541 73.2488,27.2712 Q73.8423,27.0015 74.4731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31" x="86" y="27.5352">Stage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="58" x2="119" y1="39" y2="39"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="58" x2="119" y1="47" y2="47"/><!--MD5=[0fe107772197a826067ef9a60b381095]
+class Timeout--><rect codeLine="3" fill="#FEFECE" filter="url(#f1dmugp6t4u6nm)" height="99.8203" id="Timeout" style="stroke: #A80036; stroke-width: 1.5;" width="163" x="7" y="115"/><ellipse cx="60.75" cy="131" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M63.2231,137.1431 Q62.6421,137.4419 62.0029,137.5913 Q61.3638,137.7407 60.6582,137.7407 Q58.1514,137.7407 56.8315,136.0889 Q55.5117,134.437 55.5117,131.3159 Q55.5117,128.1865 56.8315,126.5347 Q58.1514,124.8828 60.6582,124.8828 Q61.3638,124.8828 62.0112,125.0322 Q62.6587,125.1816 63.2231,125.4805 L63.2231,128.2031 Q62.5923,127.6221 61.9988,127.3523 Q61.4053,127.0825 60.7744,127.0825 Q59.4297,127.0825 58.7449,128.1492 Q58.0601,129.2158 58.0601,131.3159 Q58.0601,133.4077 58.7449,134.4744 Q59.4297,135.541 60.7744,135.541 Q61.4053,135.541 61.9988,135.2712 Q62.5923,135.0015 63.2231,134.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="47" x="81.25" y="135.5352">Timeout</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="169" y1="147" y2="147"/><ellipse cx="18" cy="158" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="27" y="161.6348">stage: Stage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="169" y1="167.9551" y2="167.9551"/><ellipse cx="18" cy="178.9551" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="137" x="27" y="182.5898">constructor:function(cfg)</text><ellipse cx="18" cy="191.9102" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="27" y="195.5449">timeout:function(ctx)</text><ellipse cx="18" cy="204.8652" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="117" x="27" y="208.5">overdue:function(ctx)</text><!--MD5=[6b88a50e2f01bde1c2ee94c647e1bd3e]
+reverse link Stage to Timeout--><path codeLine="9" d="M88.5,75.578 C88.5,88.193 88.5,102.048 88.5,114.972 " fill="none" id="Stage-backto-Timeout" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="81.5001,75.295,88.5,55.295,95.5001,75.295,81.5001,75.295" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[35c2558647d0ed0bbdbce8b409800314]
+@startuml
+
+	Class Stage
+	Class Timeout {
+		+constructor:function(cfg)
+		+timeout:function(ctx)
+		+overdue:function(ctx)
+		+stage: Stage
+	}
+ 	Stage <|- - Timeout
+
+@enduml
+
+PlantUML version 1.2020.20(Sat Nov 21 05:02:45 EST 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

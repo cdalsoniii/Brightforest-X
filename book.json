@@ -1,5 +1,28 @@
 {
-    "plugins": ["uml","prism", "-highlight", "katex-pp", "download-pdf-link"],
+    "root": "./",
+    "plugins": [
+        "uml",
+        "prism", 
+        "-highlight", 
+        "katex-pp", 
+        "download-pdf-link",
+        "mermaid-gb3",
+        "flowchart",
+        "js-sequence-diagram",
+        "sequence-diagrams",
+        "codepen",
+        "graphviz@git+https://github.com/darvasd/gitbook-plugin-graphviz.git",
+        "chart",
+        "intopic-toc",
+        "page-footer",
+        "richquotes",
+        "-lunr", 
+        "-search", 
+        "search-pro",
+        "swimlanes-io",
+        "collapsible-menu",
+        "toggle-chapters"
+    ],
     "pluginsConfig": {
         "prism": {
             "css": [
@@ -8,6 +31,45 @@
         },
         "download-pdf-link": {
             "base": "https://github.com/richdayandnight/r2dve/blob/gh-pages/book.pdf"
-        }
+        },
+        "sequence-diagrams": {
+            "theme": "simple"
+          },
+          "codepen": {
+            "height": 400,
+            "theme": 14038,
+            "description": "somepen"
+          },
+          "graphviz": {
+            "format": "svg",
+            "engine": "dot"
+        },
+        "chart": {
+            "type": "highcharts"
+        },
+        "intopic-toc": {
+            "label": "In this article"
+          },
+          "page-footer": {
+			"description": "modified at",
+			"signature": "Clifford",
+			"wisdom": "Use quantum ml to solve business problems",
+			"format": "yyyy-MM-dd hh:mm:ss",
+			"copyright": "Copyright &#169; PathX",
+			"timeColor": "#666",
+			"copyrightColor": "#666",
+			"utcOffset": "8",
+			"isShowQRCode": true,
+			"baseUri": "https://github.com/BrightforestX/PathX",
+                        "isShowIssues": false,
+			"repo": "BrightforestX/PathX",
+			"issueNum": "3",
+			"token": "",
+                        "style": "normal"
+        },
+        "richquotes":
+		{
+			"default": false
+		}
     }
 }

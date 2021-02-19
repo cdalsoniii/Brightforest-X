@@ -13,10 +13,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gitbook-plugin-codepen": "^0.1.2",
+    "gitbook-plugin-flowchart": "^1.1.0",
+    "gitbook-plugin-mermaid": "0.0.9",
+    "gitbook-plugin-mermaid-gb3": "^2.1.0",
+    "gitbook-plugin-prism": "^2.4.0",
+    "gitbook-plugin-sequence-diagrams": "^1.1.0",
+    "gitbook-plugin-toggle-chapters": "0.0.3",
     "gitbook-plugin-uml": "^1.2.4",
     "gulp": "^4.0.2",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-load-plugins": "^2.0.6"
+    "gulp-load-plugins": "^2.0.6",
+    "pywebtest-gitbook": "0.0.3"
   },
   "devDependencies": {},
   "bugs": {
