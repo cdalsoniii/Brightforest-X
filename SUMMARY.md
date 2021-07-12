@@ -7,7 +7,7 @@
     * [12\_28\_2020](daily-notes/12_2020/12_28_2020.md)
     * [12\_29\_2020](daily-notes/12_2020/12_29_2020.md)
     * [12\_31\_2020](daily-notes/12_2020/12_31_2020.md)
-    * [12\_33\_2020](daily-notes/12_2020/12_31_2020.md)
+    * [12\_33\_2020](daily-notes/12_2020/12_31_2020-1.md)
 * [Projects](projects/README.md)
   * [PathX](projects/pathx.md)
 
